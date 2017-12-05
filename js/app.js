@@ -7,8 +7,8 @@ window.addEventListener('load', function () {   /* para la carga */
 
         /*creando etiquetas ya declaradas en CSS */
         var container = document.createElement('div');
-        var form = document.createElement('input')
-        var btnSave = document.createElement('button');
+        //var form = document.createElement('input');
+        //var btnSave = document.createElement('button');
         var btnClose = document.createElement('i');
         var parentSection = document.getElementById('container')   /* se llama al id del HTML llamado "container" */
 
@@ -31,20 +31,32 @@ window.addEventListener('load', function () {   /* para la carga */
         /*agregando texto al botón color verde de la caja desplegable */
         btnSave.textContent = 'Guardar';   /* btnSave elemento agregado */
 
+
         /*Borrar al div inicial */
         /* removeChild elimina un nodo hijo del DOM y puede devolver el nodo eliminado.*/
-        parentSection.removeChild(boxAddList);
+        //         parentSection.removeChild(boxAddList);
 
         /* Creando Evento del botón guardar color verde de la ventana desplegable */
-        btnSave.addEventListener('click',function(){
-            var textList= form.value;
-
-            /** Creando la nueva caja desplegable */
-            var containerList = document.createElement('div');
-            var titleList = document.createElement('p');
-            var boxInput = document.createElement('p');
-    })
 
   })
 
 })
+
+
+document.getElementById("save-js").addEventListener('click', buttonCreate);
+
+function buttonCreate(){
+    var textList= document.getElementsByClassName("input-style").value;
+
+    /** Creando la nueva caja desplegable */
+    //var containerList = document.createElement('div');
+  //  var titleList = document.createElement('p');
+  //  var boxInput = document.createElement('p');
+
+    /*Agregando el texto de la caja desplegable "añadir lista" */
+    //titleList.textContent=textList;
+    titleList.innerHTML.appendChild(document.createTextNode(textList));
+
+    titleList.setAttribute('class','title-style'); /* agregando atributo class*/
+    //var boxInput ='Añadir una tarea';
+}
