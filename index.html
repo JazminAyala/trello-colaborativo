@@ -1,0 +1,50 @@
+<!DOCTYPE html>  <!-- Declaración del estándar usado al construir un documento HTML o XHTML -- >
+    <html lang="en">  <!-- Para el idioma -->
+    <head>
+        <meta charset="UTF-8">  <!-- Para caracteres especiales -->
+        <link rel="stylesheet" href="css/style.css">  <!-- Enlazo el archivo CSS a mi archivo HTML -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Enlazo Font Awesome -->
+        <title>Trello</title>
+    </head>
+    <body>
+      <!-- SECTION-UNO -->
+        <header>
+            <div class="header-left">
+                <p class="box-table"><span class="fa fa-trello"></span>Tableros</p></div>
+                <div class="box-input-search" ><div class="box-search"><input type="text"><i class="fa fa-search"></i></div></div>
+    <!-- La etiqueta <figure> especifica contenido autónomo, como ilustraciones, diagramas, fotos, listas de códigos, etc.
+    Si bien el contenido del elemento <figure> está relacionado con el flujo principal, su posición es independiente del flujo principal,
+    y si se elimina, no debería afectar el flujo del documento.-->
+                <figure>
+                <img src="assets/images/logo.png" alt="logo">
+            </figure>
+            <div class="header-rigth">
+                <ul>    <!-- Tomo recursos de Font Awesome -->
+                    <li><a href="#"><i class="fa fa-plus"></a></i></li>
+                    <li><a href="#"><i class="fa fa-bell-o"></a></i></li>
+                    <li><a href="#"><i class="fa fa-info"></a></i></li>
+                </ul>
+                <div class="photo-user"><img src="assets/images/ada-lovelace.jpg" alt=""></div>
+            </div>
+        </header>
+        <!-- SECTION-DOS -->
+        <main>
+          <section class= "box-title-table">
+            <ul>
+              <li class="title-bold">Tablero</li>
+              <li><i class="fa fa-star-o"></i></li>
+              <li><i class="fa fa-lock"></i></li>
+              <li><p>Privado</p></li>
+              <li class="text-menu"><a href="#">Mostrar menu</a></li>
+            </ul>
+          </section>
+        </main>
+        <!-- SECTION-TRES -->
+        <!-- seccion de la caja contenedora despegable. Su funcionalidad será llamada desde JS -->
+        <!-- las clases están contenidas en el CSS -->
+    <section id="container">
+          <div class="box-list add-list">Añadir una lista...</div>
+        </section>
+        <!--<script src="js/app.js"></script>-->   <!-- Enlazo el archivo JS a mi archivo HTML -->
+    </body>
+    </html>
