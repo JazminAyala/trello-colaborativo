@@ -1,5 +1,6 @@
 /* add.EventListener nos permite indicar al agente de usuario que permanezca atento a la interacción
 de un usuario sobre un elemento en concreto, sin necesidad de tocar un sólo caracter de nuestro marcado. */
+
 var container = document.createElement('div');
 var parentSection = document.getElementById('container');
 
@@ -33,4 +34,4 @@ function createBox(){
 
 function buttonSave(){
   createBox();
-}
+
